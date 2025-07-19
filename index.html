@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery Stat Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+    .form-label, .form-check-label {
+      font-weight: 600;
+    }
+    .form-control, .form-select, .form-check-input {
+      font-size: 1rem;
+    }
+    .form-section {
+      margin-bottom: 1rem;
+    }
+    .btn-submit {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="bg-dark text-light">
+  <div class="container py-3">
+    <h1 class="text-center mb-3">Delivery Stat Tracker</h1>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfCrAeNlJz8Awt5j0nbtVa_Ew_6FDLCcGZ5xIyEO7vesohXyA/formResponse" method="POST" target="_blank">
+      <div class="row row-cols-2 g-2">
+        <div class="form-section col">
+          <label class="form-label">Load Time</label>
+          <input type="time" name="entry.1285170903" class="form-control" required>
+        </div>
+        <div class="form-section col">
+          <label class="form-label">Arrival Time</label>
+          <input type="time" name="entry.51496341" class="form-control" required>
+        </div>
+        <div class="form-section col">
+          <label class="form-label">Back to Car Time</label>
+          <input type="time" name="entry.362731555" class="form-control" required>
+        </div>
+        <div class="form-section col">
+          <label class="form-label">Return to Store</label>
+          <input type="time" name="entry.221262672" class="form-control" required>
+        </div>
+        <div class="form-section col-12">
+          <label class="form-label">Address</label>
+          <input type="text" name="entry.724500065" class="form-control" required>
+        </div>
+        <div class="form-section col-6">
+          <label class="form-label">Order Total ($)</label>
+          <input type="number" step="0.01" name="entry.1829987111" class="form-control" required>
+        </div>
+        <div class="form-section col-6">
+          <label class="form-label">Tip Amount ($)</label>
+          <input type="number" step="0.01" name="entry.320340612" class="form-control" required>
+        </div>
+        <div class="form-section col-6">
+          <label class="form-label">Miles Traveled</label>
+          <input type="number" step="0.1" name="entry.1579328861" class="form-control" required>
+        </div>
+        <div class="form-section col-6">
+          <label class="form-label">Suite/Apt #</label>
+          <input type="text" name="entry.778505723" class="form-control" required>
+        </div>
+        <div class="form-section col-md-6">
+          <label class="form-label">Payment Type</label>
+          <select name="entry.716060556" class="form-select" required>
+            <option value="card">Card</option>
+            <option value="cash">Cash</option>
+          </select>
+        </div>
+        <div class="form-section col-md-6">
+          <label class="form-label">Tip Type</label>
+          <select name="entry.1651106547" class="form-select" required>
+            <option value="card">Card</option>
+            <option value="cash">Cash</option>
+          </select>
+        </div>
+        <div class="form-section col-12">
+          <label class="form-label">Location Type</label>
+          <select name="entry.329783697" class="form-select" required>
+            <option value="House">House</option>
+            <option value="Appartment">Apartment</option>
+            <option value="Hotel">Hotel</option>
+            <option value="Motel">Motel</option>
+            <option value="Senior Living">Senior Living</option>
+            <option value="Rehab/Hospital">Rehab/Hospital</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+        <div class="form-check col-12 mb-3">
+          <input type="checkbox" class="form-check-input" id="writein" name="entry.191242640" value="true">
+          <label class="form-check-label" for="writein">Write-in order?</label>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary w-100 btn-submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
