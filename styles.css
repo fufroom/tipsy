@@ -1,0 +1,164 @@
+:root {
+  --yellow: rgb(255, 240, 138);
+  --teal: rgb(32, 152, 157);
+  --pink: rgb(219, 39, 150);
+  --hotpink: rgb(253, 2, 105);
+  --orange: rgb(255, 82, 48);
+  --salmon: rgb(255, 113, 86);
+  --cyan: rgb(4, 171, 192);
+  --aqua: rgb(81, 254, 255);
+  --blue: rgb(67, 113, 184);
+}
+
+body {
+  background-color: #1e1e1e !important;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.section-wrapper {
+  background-color: white;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #444;
+  overflow: hidden;
+}
+
+.section-title-bar {
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+  border-bottom: 1px solid;
+}
+
+.section-title-bar.text-white {
+  border-bottom-color: white;
+}
+
+.section-title-bar.text-dark {
+  border-bottom-color: black;
+}
+
+.section-body {
+  padding: 1rem;
+  display: block;
+}
+
+.section-wrapper.collapsed .section-body {
+  display: none;
+}
+
+label.form-label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+input[type="time"],
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+
+  border: 1px solid #666;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.input-group-text {
+  background: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+.form-check-label {
+  margin-top: 0.25rem;
+}
+
+.btn-submit {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+}
+
+.fa-check-circle {
+  transition: color 0.3s;
+  color: #999;
+}
+
+/* Responsive layout for half-width fields */
+
+@media (min-width: 0px) {
+  .col-6 {
+    width: 50%;
+    float: left;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .row.g-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+
+  .row.g-2 > .col-6,
+  .row.g-2 > .col-12 {
+    padding: 0.5rem;
+  }
+
+  .col-12 {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+}
+
+/* Color variations for section headers */
+.bg-warning {
+  background-color: var(--yellow) !important;
+}
+
+.bg-info {
+  background-color: var(--teal) !important;
+}
+
+.bg-magenta {
+  background-color: var(--pink) !important;
+}
+
+.bg-secondary {
+  background-color: #666 !important;
+}
+
+.text-dark {
+  color: black !important;
+}
+
+.text-white {
+  color: white !important;
+}
